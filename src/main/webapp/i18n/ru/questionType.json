@@ -1,0 +1,24 @@
+{
+  "psychologicallyTestBackendApp": {
+    "questionType": {
+      "home": {
+        "title": "Тип вопроса",
+        "createLabel": "Создать новый тип вопроса",
+        "createOrEditLabel": "Создать или отредактировать Question Type",
+        "notFound": "No Question Types found"
+      },
+      "created": "Новый Question Type создан с идентификатором {{ param }}",
+      "updated": "Question Type обновлен с идентификатором {{ param }}",
+      "deleted": "Question Type удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Question Type {{ id }}?"
+      },
+      "detail": {
+        "title": "Question Type"
+      },
+      "type": "Тип",
+      "coefficient": "Коэффициент",
+      "description": "Описание"
+    }
+  }
+}

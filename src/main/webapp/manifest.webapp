@@ -1,0 +1,11 @@
+{
+  "name": "psychologically_test_backend",
+  "short_name": "psychologically_test_backend",
+  "icons": [
+  ],
+  "theme_color": "#000000",
+  "background_color": "#FFFFFF",
+  "start_url": ".",
+  "display": "standalone",
+  "orientation": "portrait"
+}

@@ -1,0 +1,43 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "ru.vlsu.psytest",
+      "nativeLanguage": "ru"
+    },
+    "jhipsterVersion": "6.10.3",
+    "applicationType": "monolith",
+    "baseName": "psychlogically_test_backendo",
+    "packageName": "ru.vlsu.psytest",
+    "packageFolder": "ru/vlsu/psytest",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "YjRkNTEyYzFiZTdhNmU5ZTY3YjBjMjVkY2VkMTU5ZjM4ZmI0MzFiYTE1YmUzMzdhMzk0NzZhMzI4MDg4OTJkMWM2NGU5NjM4YTZiM2EzZGJlMTEzMjcwZDcxZDEyYzRkMWEwYjgwZTM0MWNiMWQ0OGYzNDU2NDI3ZDlhZGM2NGY=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "react",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "creationTimestamp": 1603653655135,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "ru",
+    "languages": ["ru", "en"],
+    "blueprints": []
+  }
+}

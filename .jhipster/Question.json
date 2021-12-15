@@ -1,0 +1,35 @@
+{
+  "name": "Question",
+  "fields": [
+    {
+      "fieldName": "question",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "isAdd",
+      "fieldType": "Boolean",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "questionType",
+      "otherEntityRelationshipName": "question",
+      "relationshipName": "questionType",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20201025192548",
+  "entityTableName": "question",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

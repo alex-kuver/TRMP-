@@ -1,0 +1,59 @@
+
+ 
+entity ResultTest {
+finishedAt Instant required,
+demonstrativeType Integer required,
+stuckType Integer required,
+pedanticType Integer required,
+excitableType Integer required,
+hyperthymicType Integer required,
+dysthymicType Integer required,
+anxiouslyFearfulType Integer required,
+emotionallyExaltedType Integer required,
+emotiveType Integer required,
+cyclothymicType Integer
+}
+
+entity Answer {
+answer Boolean required
+}
+
+entity Question {
+question String required,
+isAdd Boolean required
+}
+
+entity QuestionType {
+type Psychotype required,
+coefficient Integer required,
+description String required
+}
+
+
+relationship ManyToOne {
+Question{questionType} to QuestionType
+Answer{question} to Question
+Answer{resultTest} to ResultTest
+ResultTest{user} to User
+}
+
+paginate ResultTest with pagination
+
+service all with serviceImpl
+service all with serviceClass
+dto all with mapstruct
+
+filter ResultTest, Question, Answer
+
+enum Psychotype {
+DEMONSTRATIVE_TYPE, 
+STUCK_TYPE,
+PEDANTIC_TYPE,
+EXCITABLE_TYPE,
+HYPERTHYMIC_TYPE,
+DYSTHYMIC_TYPE,
+ANXIOUSLY_FEARFULL_TYPE,
+EMOTIONALLY_TYPE,
+EMOTIVE_TYPE,
+CYCLOTHYMIC_TYPE
+}

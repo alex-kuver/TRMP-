@@ -1,0 +1,24 @@
+{
+  "psychologicallyTestBackendApp": {
+    "question": {
+      "home": {
+        "title": "Вопросы",
+        "createLabel": "Создать новый вопрос",
+        "createOrEditLabel": "Создать или отредактировать Question",
+        "notFound": "No Questions found"
+      },
+      "created": "Новый Question создан с идентификатором {{ param }}",
+      "updated": "Question обновлен с идентификатором {{ param }}",
+      "deleted": "Question удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Question {{ id }}?"
+      },
+      "detail": {
+        "title": "Question"
+      },
+      "question": "Текст вопроса",
+      "isAdd": "Прибавляется",
+      "questionType": "Тип вопроса"
+    }
+  }
+}

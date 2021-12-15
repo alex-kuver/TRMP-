@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns="http://www.liquibase.org/xml/ns/dbchangelog">
+
+
+    <changeSet author="sevdokimov" id="20201114191300-1">
+
+        <comment>Added column gender and birthdate to User</comment>
+        <sql stripComments="true" splitStatements="true"
+             dbms="postgresql">
+            ALTER TABLE jhi_user ADD COLUMN gender VARCHAR(10) NULL DEFAULT 'MALE', ADD COLUMN birthDate TIMESTAMP(0) WITHOUT TIME ZONE NULL
+        </sql>
+    </changeSet>
+
+</databaseChangeLog>

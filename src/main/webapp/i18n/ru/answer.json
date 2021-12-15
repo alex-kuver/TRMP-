@@ -1,0 +1,24 @@
+{
+  "psychologicallyTestBackendApp": {
+    "answer": {
+      "home": {
+        "title": "Answers",
+        "createLabel": "Создать новый Answer",
+        "createOrEditLabel": "Создать или отредактировать Answer",
+        "notFound": "No Answers found"
+      },
+      "created": "Новый Answer создан с идентификатором {{ param }}",
+      "updated": "Answer обновлен с идентификатором {{ param }}",
+      "deleted": "Answer удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Answer {{ id }}?"
+      },
+      "detail": {
+        "title": "Answer"
+      },
+      "answer": "Answer",
+      "question": "Question",
+      "resultTest": "Result Test"
+    }
+  }
+}

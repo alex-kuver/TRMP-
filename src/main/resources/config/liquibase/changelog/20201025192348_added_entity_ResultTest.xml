@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    
+    <!--
+        Added the entity ResultTest.
+    -->
+    <changeSet id="20201025192348-1" author="jhipster">
+        <createTable tableName="result_test">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="finished_at" type="datetime">
+                <constraints nullable="false" />
+            </column>
+            <column name="demonstrative_type" type="integer">
+                <constraints nullable="false" />
+            </column>
+            <column name="stuck_type" type="integer">
+                <constraints nullable="false" />
+            </column>
+            <column name="pedantic_type" type="integer">
+                <constraints nullable="false" />
+            </column>
+            <column name="excitable_type" type="integer">
+                <constraints nullable="false" />
+            </column>
+            <column name="hyperthymic_type" type="integer">
+                <constraints nullable="false" />
+            </column>
+            <column name="dysthymic_type" type="integer">
+                <constraints nullable="false" />
+            </column>
+            <column name="anxiously_fearful_type" type="integer">
+                <constraints nullable="false" />
+            </column>
+            <column name="emotionally_exalted_type" type="integer">
+                <constraints nullable="false" />
+            </column>
+            <column name="emotive_type" type="integer">
+                <constraints nullable="false" />
+            </column>
+            <column name="cyclothymic_type" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="user_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
+        </createTable>
+        <dropDefaultValue tableName="result_test" columnName="finished_at" columnDataType="datetime"/>
+    </changeSet>
+
+    <changeSet id="20201025192348-1-relations" author="jhipster">
+
+    </changeSet>
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here -->
+
+    <!--
+        Load sample data generated with Faker.js
+        - This data can be easily edited using a CSV editor (or even MS Excel) and
+          is located in the 'src/main/resources/config/liquibase/fake-data' directory
+        - By default this data is applied when running with the JHipster 'dev' profile.
+          This can be customized by adding or removing 'faker' in the 'spring.liquibase.contexts'
+          Spring Boot configuration key.
+    -->
+    <changeSet id="20201025192348-1-data" author="jhipster" context="faker">
+        <loadData
+                  file="config/liquibase/fake-data/result_test.csv"
+                  separator=";"
+                  tableName="result_test">
+            <column name="id" type="numeric"/>
+            <column name="finished_at" type="datetime"/>
+            <column name="demonstrative_type" type="numeric"/>
+            <column name="stuck_type" type="numeric"/>
+            <column name="pedantic_type" type="numeric"/>
+            <column name="excitable_type" type="numeric"/>
+            <column name="hyperthymic_type" type="numeric"/>
+            <column name="dysthymic_type" type="numeric"/>
+            <column name="anxiously_fearful_type" type="numeric"/>
+            <column name="emotionally_exalted_type" type="numeric"/>
+            <column name="emotive_type" type="numeric"/>
+            <column name="cyclothymic_type" type="numeric"/>
+            <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here -->
+        </loadData>
+    </changeSet>
+
+</databaseChangeLog>
